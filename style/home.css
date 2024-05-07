@@ -1,0 +1,406 @@
+/* CSS for navigation */
+
+a{
+    align-content: center;
+    margin: auto;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+}
+.Navigation {
+    background-color: #ffffff;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+}
+nav {
+    background-color: #ffffff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 53%;
+    height: 50px;
+    align-content: center;
+    margin: auto;
+    border-radius: 66px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    transition: top 1s ease;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+  
+    
+}
+nav ul li a:hover {
+    color: #007bff;
+    margin-top: 5px;
+
+    transform: scale(2.2); /* Slight scale increase on hover */
+    border-radius: 150px;
+    background-color: aliceblue;
+}
+
+
+.content {
+    margin-top: 50px; 
+    /* Ensures content is below the fixed navigation */
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 66px;
+    transition: background-color 0.3s ease;
+    width: 50px;
+}
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Slight scale increase on hover */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.footer{
+    background-color: #333;
+    position:static;
+    bottom:0px;
+    width:100%;
+    display:inline-block;
+    display:flex;
+    justify-content: center;
+    height: 170px;
+    margin-top: 34px;
+}
+.footer .info ul li{
+    list-style-type: none;
+    display:inline-block;
+    display:flex;
+    text-align: centre;
+}
+.footer .info ul li a{
+    text-decoration: none;
+    color:white;
+
+}
+.footer .info ul{
+    display:inline-block;
+    display:flex;
+    align-content: center;
+    font-family: system-ui;
+}
+.footer .info ul li a:hover{
+    color:#007bff;
+}
+.footer .info .social {
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    padding-right:275px;
+
+}
+
+.toggle{
+    height:25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 65px;
+    margin:inherit;
+    display:flex;
+    justify-content:space-around;
+    margin-top: 33px;
+    align-items: center;
+    position: relative;
+   
+}
+.toggle-icon{
+    color: rgb(187, 163, 29);
+    width:fit-content;
+    height: auto;
+
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(236, 226, 226);
+    position: absolute;
+    border-radius: 60%;
+    margin-right: 50%;
+    cursor: pointer;
+    transition:  0.5s ease all;
+}
+.containe{
+    background-color: rgb(244 244 244);
+    overflow: hidden;
+}
+
+.featured-content{
+    height:40vh;
+    padding: 50px;
+    color: rgb(7, 7, 7);
+   
+}
+.featured-desc{
+    width: 100%;
+    margin: 100px 20px;
+    color: #140f0f;
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+}
+}
+.featured-button{
+    background-color: rgb(133, 21, 21);
+    color:whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 10px;
+   
+
+}
+.movie-list-containe{
+    padding:0 20px;
+}
+.movie-list-wrapper{
+    position: relative;
+
+  
+
+}
+.movie-list{
+    display: flex;
+    height: 300px;
+    align-items:center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+
+}
+.movie-img{
+    width: 270px;
+    height:200px;
+    object-fit: fit;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+}
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+.movie-list-item:hover .movie-title,.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+    
+
+}
+.movie-title{
+    background-color: #333333e5;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top:10%;
+    left: 50px;
+    color:white;
+    width: fit-content;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    
+}
+.movie-list-item-desc{
+    background-color: #333333c5;
+    padding:  10px;
+    font-size: 14px;
+    position: absolute;
+    top:30%;
+    color: #ffffff;
+    left: 50px;
+    width:150px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+   
+}
+.movie-list-item-button{
+    padding: 10px;
+    background-color: rgb(133, 21, 21);
+    color:whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom:20px;
+    left: 50px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top:90px;
+    right: 0;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.arrow2{
+    font-size: 120px;
+    position: absolute;
+    top:90px;
+    left: 0;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.containe.active{
+    background-color: black;
+}
+.movie-title,.movie-list-title.active{
+    color: white;
+}
+
+.toggle.active{
+    background-color: rgb(252, 248, 248);
+
+}
+.toggle-ball.active{
+  background-color: rgb(5, 4, 4);;
+ transform: translateX(32px);
+ transition:  0.3s;
+}
+.Navigation.active {
+    background-color: #000000;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+}
+nav.active {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 53%;
+    height: 50px;
+    align-content: center;
+    margin: auto;
+    border-radius: 66px;
+}
+nav ul li a.active{
+    color: #ffffff;
+}
+
+
+nav ul li a:hover.active {
+    color: #9dc3ec;
+    font-size: x-large;
+    margin-top: 5px;
+    transform: scale(2.2); /* Slight scale increase on hover */
+    border-radius: 150px;
+    background-color: rgb(255, 251, 251);
+}
+
+.button.active {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4b1df; /* Change the color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 66px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+.dropdown{
+  display: inline-block; 
+}
+.dropdown button{
+    background-color: #bb7b9c;
+    width: fit-content;
+    padding:10px 15px ;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: 30px;
+  
+}
+.dropdown a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    padding: 10px 15px;
+    width:fit-content
+    
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #55223dde ;
+    width: 150px;
+    bottom: -160px;
+    box-shadow: 2px 2px 5px hsla(0, 0%,0%,0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+  background-color: hsl(336, 72%, 22%);
+}
+.dropdown a:hover{
+    background-color: hsl(326, 58%, 44%);
+    
+}
+
+  
+  
+  
+  
+  
+
+
+
+

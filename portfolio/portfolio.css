@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+}
+a{
+    align-content: center;
+    margin: auto;
+    width: 180px;
+}
+.Navigation {
+    background-color: #ffffff;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+}
+nav {
+    background-color: #ffffff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 53%;
+    height: 50px;
+    align-content: center;
+    margin: auto;
+    border-radius: 66px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    transition: top 1s ease;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;   
+}
+nav ul li a:hover {
+    color: #007bff;
+    font-size: x-large;
+    margin-top: 5px;
+
+    transform: scale(2.2); /* Slight scale increase on hover */
+    border-radius: 150px;
+    background-color: aliceblue;
+}
+.content {
+    margin-top: 50px; /* Ensures content is below the fixed navigation */
+}
+.loged{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 230px;
+    margin: auto;
+}
+.footer{
+    background-color: #333;
+    position:static;
+    bottom:0px;
+    width:100%;
+    display:inline-block;
+    display:flex;
+    justify-content: center;
+    height: 170px;
+    margin-top: -4px;
+    
+}
+.footer .info ul li{
+    list-style-type: none;
+    display:inline-block;
+    display:flex;
+    text-align: centre;
+}
+.footer .info ul li a{
+    text-decoration: none;
+    color:white;
+
+}
+.footer .info ul{
+    display:inline-block;
+    display:flex;
+    align-content: center;
+    font-family: system-ui;
+}
+.footer .info ul li a:hover{
+    color:#007bff;
+}
+.footer .info .social {
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    padding-right:275px;
+}
+.film-video{
+    padding: 20px 0px 20px 300px;
+    background-color: black;
+}
+
+.img{
+    border-radius: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}

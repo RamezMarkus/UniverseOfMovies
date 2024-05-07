@@ -1,0 +1,227 @@
+/* CSS for navigation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+a{
+    align-content: center;
+    margin: auto;
+    width: 180px;
+}
+.Navigation {
+    background-color: #ffffff;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    z-index: 2500;
+}
+nav {
+    background-color: #ffffff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 53%;
+    height: 50px;
+    align-content: center;
+    margin: auto;
+    border-radius: 66px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    transition: top 1s ease;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+  
+    
+}
+nav ul li a:hover {
+    color: #007bff;
+    margin-top: 5px;
+
+    transform: scale(2.2); /* Slight scale increase on hover */
+    border-radius: 150px;
+    background-color: aliceblue;
+}
+
+
+.content {
+    margin-top: 50px; /* Ensures content is below the fixed navigation */
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 66px;
+    transition: background-color 0.3s ease;
+    width: 50px;
+}
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Slight scale increase on hover */
+}
+.footer{
+    background-color: #333;
+    position:static;
+    bottom:0px;
+    width:100%;
+    display:inline-block;
+    display:flex;
+    justify-content: center;
+    height: 170px;
+    margin-top: 34px;
+}
+.footer .info ul li{
+    list-style-type: none;
+    display:inline-block;
+    display:flex;
+    text-align: centre;
+}
+.footer .info ul li a{
+    text-decoration: none;
+    color:white;
+
+}
+.footer .info ul{
+    display:inline-block;
+    display:flex;
+    align-content: center;
+    font-family: system-ui;
+}
+.footer .info ul li a:hover{
+    color:#007bff;
+}
+.footer .info .social {
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    padding-right:275px;
+
+}
+.login-box{
+    text-align: center;
+    width:420px;
+    margin-top: 130px ;
+    background-color: black;
+    opacity:95% ;
+    color:beige;
+    border-radius: 50px;
+    padding:45px 40px ;
+    margin-left: 507px;
+    }
+    
+    
+    
+    .login-box h1{
+    
+    font-size: 36px;
+    text-align: center;}
+    
+    
+    .login-box .input-box{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: auto;}
+    
+    .input-box input{
+    width:100%;
+    height:100%;
+    padding:auto;
+    font-size: 15px;
+    background:white;
+    color: black;
+    outline: none;
+    border:2px solid ;
+    border-radius: 60px;}
+    
+    .input-box input::placeholder{
+    color: black;}
+    
+    
+    .input-box i bx bx-lock-alt{
+    position: absolute;
+    right: 100px;
+    top:60px;
+    transform: translateY(-70%);
+    font-size: 300px;}
+    
+    
+    
+    
+    
+    .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 15px;
+}
+     
+    .remember-forget label input{
+    color:grey;
+    text-decoration: none;
+    margin:auto;}
+    
+    
+    .remember-forget a{
+    color: white;
+    text-decoration: none;
+    
+    
+    }
+    
+    .button2{
+    width:100%;
+    height: 30px;
+    background-color:#007bff;
+    border-radius: 50px;
+    border: none;
+    font-weight: 850;}
+    
+    .register-link{
+    font-size: 15px;
+    text-align:center;
+    margin:auto;}
+    
+    
+    .register-link p a {
+    color:#007bff;
+    text-decoration: none;
+    font-weight: 700;}
